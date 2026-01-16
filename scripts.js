@@ -10,7 +10,7 @@
 const CONFIG = {
   // Countdown target date (format: 'YYYY-MM-DDTHH:MM:SS')
   // Change this to your campaign deadline
-  countdownTargetDate: '2026-03-31T23:59:59',
+  countdownTargetDate: '2026-01-20T19:00:00',
 
   // Form submission endpoint (optional)
   // Replace with your actual endpoint or leave as null for console logging
@@ -289,6 +289,65 @@ function initHeroVideo() {
 }
 
 // ============================================
+// GALLERY
+// ============================================
+
+function initGallery() {
+  const mainImg = document.getElementById('gallery-main');
+  const thumbs = document.querySelectorAll('.gallery__thumb');
+  const prevBtn = document.getElementById('gallery-prev');
+  const nextBtn = document.getElementById('gallery-next');
+  const container = document.querySelector('.gallery__main');
+
+  if (!mainImg || !thumbs.length) return;
+
+  let currentIndex = 0;
+
+  function setActive(index) {
+    currentIndex = index;
+    const btn = thumbs[index];
+    const src = btn.getAttribute('data-src');
+    const alt = btn.getAttribute('data-alt') || '';
+    mainImg.src = src;
+    mainImg.alt = alt;
+    thumbs.forEach((t) => t.classList.remove('is-active'));
+    btn.classList.add('is-active');
+    btn.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+  }
+
+  thumbs.forEach((btn, i) => {
+    btn.addEventListener('click', () => setActive(i));
+  });
+
+  if (prevBtn) {
+    prevBtn.addEventListener('click', () => {
+      const i = (currentIndex - 1 + thumbs.length) % thumbs.length;
+      setActive(i);
+    });
+  }
+
+  if (nextBtn) {
+    nextBtn.addEventListener('click', () => {
+      const i = (currentIndex + 1) % thumbs.length;
+      setActive(i);
+    });
+  }
+
+  // Keyboard navigation
+  container?.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowLeft') {
+      const i = (currentIndex - 1 + thumbs.length) % thumbs.length;
+      setActive(i);
+    } else if (e.key === 'ArrowRight') {
+      const i = (currentIndex + 1) % thumbs.length;
+      setActive(i);
+    }
+  });
+
+  setActive(0);
+}
+
+// ============================================
 // INITIALISATION
 // ============================================
 
@@ -298,4 +357,5 @@ document.addEventListener('DOMContentLoaded', () => {
   initSmoothScroll();
   initScrollAnimations();
   initHeroVideo();
+  initGallery();
 });
