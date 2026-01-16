@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Save the King's Arms - a 300-year-old community hub in Polebrook facing closure. Join our campaign to preserve this heritage landmark.">
+  <title>Save the King's Arms | Polebrook Heritage Campaign</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- ============================================
+       SECTION 1: HERO (Full Viewport)
+       ============================================ -->
+  <section id="hero" class="hero">
+    <!-- Background video with image fallback -->
+    <div class="hero__media">
+      <!-- Replace VIDEO_URL with actual video, or remove video tag to use poster image only -->
+      <video
+        autoplay
+        muted
+        loop
+        playsinline
+        poster="https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=1920&q=80"
+        class="hero__video"
+      >
+        <!-- <source src="VIDEO_URL" type="video/mp4"> -->
+      </video>
+      <div class="hero__overlay"></div>
+    </div>
+
+    <div class="hero__content">
+      <h1 class="hero__title">The Heart of Polebrook Is At Risk</h1>
+      <p class="hero__subtitle">
+        The King's Arms, a 300-year-old community hub, faces closure.<br>
+        If we lose it, we lose more than a pub.
+      </p>
+      <a href="#support-form" class="btn btn--primary">Take Action to Save the King's Arms</a>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SECTION 2: COUNTDOWN STRIP
+       ============================================ -->
+  <section id="countdown" class="countdown-strip">
+    <div class="countdown-strip__container">
+      <div class="countdown-strip__item">
+        <div class="countdown-strip__digits" id="countdown-days">00</div>
+        <div class="countdown-strip__label">Days</div>
+      </div>
+      <div class="countdown-strip__item">
+        <div class="countdown-strip__digits" id="countdown-hours">00</div>
+        <div class="countdown-strip__label">Hours</div>
+      </div>
+      <div class="countdown-strip__item">
+        <div class="countdown-strip__digits" id="countdown-minutes">00</div>
+        <div class="countdown-strip__label">Minutes</div>
+      </div>
+      <div class="countdown-strip__item">
+        <div class="countdown-strip__digits" id="countdown-seconds">00</div>
+        <div class="countdown-strip__label">Seconds</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SECTION 3: SPLIT FEATURE SECTION
+       ============================================ -->
+  <section id="about" class="split-feature">
+    <div class="split-feature__container">
+      <div class="split-feature__text">
+        <h2 class="split-feature__heading">The heart of our village is under threat</h2>
+        <h3 class="split-feature__subheading">The King's Arms: At the Heart of Polebrook</h3>
+        <p>
+          For over three centuries, the King's Arms has stood at the centre of Polebrook life.
+          It's where generations have gathered to celebrate, commiserate, and simply be together.
+          More than bricks and mortar, it represents the soul of our community.
+        </p>
+        <p>
+          Now, this irreplaceable heritage landmark faces an uncertain future. Without action,
+          we risk losing not just a building, but a living connection to our shared history
+          and the gathering place that binds our village together.
+        </p>
+        <p class="split-feature__closer">
+          <strong>We cannot let that happen.</strong>
+        </p>
+      </div>
+      <div class="split-feature__image">
+        <img
+          src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800&q=80"
+          alt="Traditional English pub exterior"
+          loading="lazy"
+        >
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SECTION 4: DARK CAMPAIGN GRID
+       ============================================ -->
+  <section id="campaign" class="campaign-grid">
+    <div class="campaign-grid__container">
+
+      <!-- Block A: Image Left, Text Right -->
+      <div class="campaign-grid__block">
+        <div class="campaign-grid__image">
+          <img
+            src="https://images.unsplash.com/photo-1543007630-9710e4a00a20?w=600&q=80"
+            alt="Community gathering at a traditional pub"
+            loading="lazy"
+          >
+        </div>
+        <div class="campaign-grid__text">
+          <h3>What We Will Lose</h3>
+          <p>
+            The King's Arms isn't just a pub—it's the village living room. It's where newcomers
+            become neighbours, where local groups meet, where memories are made.
+          </p>
+          <p>
+            Lose it, and we lose the heart of our community. The emptiness left behind
+            cannot be filled by anything else.
+          </p>
+        </div>
+      </div>
+
+      <!-- Block B: Text Left, Image Right -->
+      <div class="campaign-grid__block campaign-grid__block--reverse">
+        <div class="campaign-grid__image">
+          <img
+            src="https://images.unsplash.com/photo-1572116469696-31de0f17cc34?w=600&q=80"
+            alt="Historic pub interior"
+            loading="lazy"
+          >
+        </div>
+        <div class="campaign-grid__text">
+          <h3>What's Happening</h3>
+          <p>
+            The King's Arms faces a critical moment. Economic pressures and changing
+            circumstances have put its future in jeopardy. The clock is ticking,
+            and without significant community support, closure becomes increasingly likely.
+          </p>
+        </div>
+      </div>
+
+      <!-- Block C: Image Left, Text Right -->
+      <div class="campaign-grid__block">
+        <div class="campaign-grid__image">
+          <img
+            src="https://images.unsplash.com/photo-1565123409695-7b5ef63a2efb?w=600&q=80"
+            alt="Historic building architecture"
+            loading="lazy"
+          >
+        </div>
+        <div class="campaign-grid__text">
+          <h3>A Heritage Worth Protecting</h3>
+          <p>
+            Three hundred years of history reside within these walls. From the coaching
+            inn days to the present, the King's Arms has witnessed every chapter of
+            Polebrook's story. It's a listed building, a local landmark, and an
+            irreplaceable piece of English heritage.
+          </p>
+        </div>
+      </div>
+
+      <!-- Block D: Text Left, Image Right -->
+      <div class="campaign-grid__block campaign-grid__block--reverse">
+        <div class="campaign-grid__image">
+          <img
+            src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&q=80"
+            alt="Community coming together"
+            loading="lazy"
+          >
+        </div>
+        <div class="campaign-grid__text">
+          <h3>What We Can Do</h3>
+          <p>
+            Together, our voices carry weight. By sharing your support, your memories,
+            and your stories, you help build an undeniable case for preservation.
+            Every message matters.
+          </p>
+          <a href="#support-form" class="btn btn--text">How You Can Help &rarr;</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================
+       SECTION 5: SUPPORT CTA BAND
+       ============================================ -->
+  <section id="cta" class="cta-band">
+    <div class="cta-band__container">
+      <span class="cta-band__eyebrow">Every bit of support helps.</span>
+      <p class="cta-band__text">
+        Names, stories, and shared memories all strengthen the case to save the King's Arms.
+      </p>
+      <a href="#support-form" class="btn btn--primary">Show Us Your Support!</a>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SECTION 6: SUPPORT FORM
+       ============================================ -->
+  <section id="support-form" class="support-form">
+    <div class="support-form__container">
+      <div class="support-form__card">
+        <h2 class="support-form__title">Share Your Support</h2>
+        <p class="support-form__caption">
+          Every bit of support helps. Names, stories, and shared memories all strengthen
+          the case to save the King's Arms.
+        </p>
+
+        <form id="supportForm" class="form" novalidate>
+          <div class="form__group">
+            <label for="name" class="form__label">Name <span class="form__required">*</span></label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="form__input"
+              required
+              placeholder="Your full name"
+            >
+            <span class="form__error" id="name-error">Please enter your name</span>
+          </div>
+
+          <div class="form__group">
+            <label for="email" class="form__label">Email <span class="form__required">*</span></label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form__input"
+              required
+              placeholder="your@email.com"
+            >
+            <span class="form__error" id="email-error">Please enter a valid email address</span>
+          </div>
+
+          <div class="form__group">
+            <label for="postcode" class="form__label">Postcode <span class="form__optional">(optional)</span></label>
+            <input
+              type="text"
+              id="postcode"
+              name="postcode"
+              class="form__input"
+              placeholder="PE8 5LB"
+            >
+          </div>
+
+          <div class="form__group">
+            <label for="message" class="form__label">Your Message or Memory <span class="form__required">*</span></label>
+            <textarea
+              id="message"
+              name="message"
+              class="form__textarea"
+              required
+              rows="5"
+              placeholder="Share your memories of the King's Arms or why saving it matters to you..."
+            ></textarea>
+            <span class="form__error" id="message-error">Please share your message or memory</span>
+          </div>
+
+          <div class="form__group">
+            <label for="photo" class="form__label">Upload a Photo <span class="form__optional">(optional)</span></label>
+            <input
+              type="file"
+              id="photo"
+              name="photo"
+              class="form__file"
+              accept="image/*"
+            >
+            <span class="form__hint">Share a photo of your memories at the King's Arms</span>
+          </div>
+
+          <div class="form__group form__group--checkbox">
+            <label class="form__checkbox-label">
+              <input
+                type="checkbox"
+                id="consent"
+                name="consent"
+                class="form__checkbox"
+              >
+              <span class="form__checkbox-text">
+                I'm happy for my message to be quoted (first name only).
+              </span>
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--full">Submit Support</button>
+
+          <p class="form__privacy">
+            We'll only use your details for this campaign.
+          </p>
+        </form>
+
+        <div id="form-success" class="form__success" hidden>
+          <h3>Thank You!</h3>
+          <p>Your support has been received. Together, we can save the King's Arms.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SECTION 7: PRESS / LINKS CARD
+       ============================================ -->
+  <section id="press" class="press-card">
+    <div class="press-card__container">
+      <a href="https://www.zoopla.co.uk/discover/property-news/good-local-pub-house-price/" class="press-card__link" target="_blank" rel="noopener noreferrer">
+        <article class="press-card__article">
+          <div class="press-card__image">
+            <img
+              src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=400&q=80"
+              alt="Traditional British pub"
+              loading="lazy"
+            >
+          </div>
+          <div class="press-card__content">
+            <h3 class="press-card__headline">Zoopla: could a good local pub increase your house price?</h3>
+            <span class="press-card__author">Zoopla Property News</span>
+            <span class="press-card__cta">View Article &rarr;</span>
+          </div>
+        </article>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SECTION 8: FOOTER
+       ============================================ -->
+  <footer class="footer">
+    <div class="footer__container">
+      <p class="footer__copyright">Copyright &copy; 2026 Save the King's Arms</p>
+      <nav class="footer__nav">
+        <a href="#hero" class="footer__link">Home</a>
+        <a href="#" class="footer__link">Privacy Policy</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
