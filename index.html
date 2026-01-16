@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Save the King's Arms - a 300-year-old community hub in Polebrook facing closure. Join our campaign to preserve this heritage landmark.">
+  <title>Save the King's Arms | Polebrook Heritage Campaign</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- ============================================
+       SECTION 1: HERO (Full Viewport)
+       ============================================ -->
+  <section id="hero" class="hero">
+    <!-- Background video with image fallback -->
+    <div class="hero__media">
+      <!-- Replace VIDEO_URL with actual video, or remove video tag to use poster image only -->
+      <video
+        autoplay
+        muted
+        loop
+        playsinline
+        poster="images/DJI_0.jpg"
+        class="hero__video"
+      >
+        <source src="images/DJI_0894.mp4" type="video/mp4">
+      </video>
+      <div class="hero__overlay"></div>
+    </div>
+
+    <div class="hero__content">
+      <h1 class="hero__title">The Heart of Polebrook Is At Risk</h1>
+      <p class="hero__subtitle">
+        The King's Arms, a 300-year-old community hub, faces closure.<br>
+        If we lose it, we lose more than a pub.
+      </p>
+      <a href="#support-form" class="btn btn--primary">Take Action to Save the King's Arms</a>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SECTION 2: COUNTDOWN STRIP
+       ============================================ -->
+  <section id="countdown" class="countdown-strip">
+    <div class="countdown-strip__background">
+      <img src="images/DJI_0129.jpg" alt="Polebrook aerial view" class="countdown-strip__bg-image">
+      <div class="countdown-strip__overlay"></div>
+    </div>
+    <div class="countdown-strip__wrapper">
+      <h2 class="countdown-strip__title">Village Meeting</h2>
+      <p class="countdown-strip__subtitle">Show your support at the Polebrook Village meeting - Tuesday 20th at 7pm</p>
+      <div class="countdown-strip__container">
+        <div class="countdown-strip__item">
+          <div class="countdown-strip__digits" id="countdown-days">00</div>
+          <div class="countdown-strip__label">Days</div>
+        </div>
+        <div class="countdown-strip__item">
+          <div class="countdown-strip__digits" id="countdown-hours">00</div>
+          <div class="countdown-strip__label">Hours</div>
+        </div>
+        <div class="countdown-strip__item">
+          <div class="countdown-strip__digits" id="countdown-minutes">00</div>
+          <div class="countdown-strip__label">Minutes</div>
+        </div>
+        <div class="countdown-strip__item">
+          <div class="countdown-strip__digits" id="countdown-seconds">00</div>
+          <div class="countdown-strip__label">Seconds</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SECTION 3: SPLIT FEATURE SECTION
+       ============================================ -->
+  <section id="about" class="split-feature">
+    <div class="split-feature__container">
+      <div class="split-feature__text">
+        <h2 class="split-feature__heading">The heart of our village is under threat</h2>
+        <h3 class="split-feature__subheading">The King's Arms: At the Heart of Polebrook</h3>
+          <p>
+            The King's Arms is a striking late 17th-century Grade II Listed building, built from coursed limestone and crowned with a traditional reed-thatched roof. Standing at the centre of Polebrook's conservation area, it is one of the village's most recognisable and cherished landmarks.
+          </p>
+          <p>
+            For over three centuries, it has been a place of welcome, gathering, and shared life.
+          </p>
+          <h4 class="split-feature__sub-section">More Than a Pub</h4>
+          <p>
+            For centuries, the King's Arms was far more than a public house. From the 18th century onwards, it served as the village's informal administrative heart, hosting land auctions, acting as a stop for mail collection, and even functioning as a courtroom for local <em>Petty Sessions</em>.
+          </p>
+          <p>
+            This unique history makes the King's Arms not just a place of hospitality, but a living record of Polebrook's civic and social life.
+          </p>
+      </div>
+      <div class="split-feature__image">
+        <img
+          src="images/D85_0397.jpg"
+          alt="The King's Arms garden and sign"
+          loading="lazy"
+        >
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SECTION 4: DARK CAMPAIGN GRID
+       ============================================ -->
+  <section id="campaign" class="campaign-grid">
+    <div class="campaign-grid__container">
+
+      <!-- Block A: Image Left, Text Right -->
+      <div class="campaign-grid__block">
+        <div class="campaign-grid__image">
+          <img
+            src="images/Oakley-171223-94582-Edit.jpg"
+            alt="Community gathering at The King's Arms"
+            loading="lazy"
+          >
+        </div>
+        <div class="campaign-grid__text">
+          <h3>What's Happening Now</h3>
+          <p>
+            Today, the King’s Arms remains the only community space in the village open on a near-daily basis.
+            It is the go-to venue for local meetings, social gatherings, celebrations, and village events, as well as a much-loved dining and drinking destination.
+          </p>
+          <p>
+            Its potential closure would leave Polebrook without a walkable, shared social space.
+          </p>
+        </div>
+      </div>
+
+      <!-- Block B: Text Left, Image Right -->
+      <div class="campaign-grid__block campaign-grid__block--reverse">
+        <div class="campaign-grid__image">
+          <img
+            src="images/KA-Kitchen Interiors-1.jpg"
+            alt="The King's Arms interior"
+            loading="lazy"
+          >
+        </div>
+        <div class="campaign-grid__text">
+          <h3>What We Will Lose</h3>
+          <p>
+          Losing the King’s Arms would cause genuine social hardship. For many residents, particularly older or less mobile members of the community, the pub is their primary, and sometimes only, source of regular social interaction.
+          </p>
+          <p>
+          This would be more than the loss of an amenity. It would be the loss of connection, inclusion, and everyday community life.
+          </p>
+        </div>
+      </div>
+
+      <!-- Block C: Text Left, Image Right -->
+      <div class="campaign-grid__block">
+        <div class="campaign-grid__image">
+          <img
+            src="images/504988489_10162064925738717_6303940028685650812_n.jpg"
+            alt="Community gathering at The King's Arms"
+            loading="lazy"
+          >
+        </div>
+        <div class="campaign-grid__text">
+          <h3>What We Can Do</h3>
+          <p>
+            With your support, we can protect the King’s Arms and preserve it as the historic and social lifeblood of Polebrook, not just for today, but for generations to come.
+          </p> 
+          <a href="#support-form" class="btn btn--text">How You Can Help &rarr;</a>
+        </div>
+      </div>
+
+
+
+    </div>
+  </section>
+
+  <!-- ============================================
+       SECTION 5: IMAGE GALLERY
+       ============================================ -->
+  <section id="gallery" class="gallery">
+    <div class="gallery__container">
+      <h2 class="gallery__title">What We Will Miss</h2>
+      <div class="gallery__accent"></div>
+
+      <div class="gallery__main" aria-live="polite">
+        <button class="gallery__nav gallery__nav--prev" id="gallery-prev" aria-label="Previous image">&#8592;</button>
+        <img id="gallery-main" src="images/Kings Arms - Selects-73.jpg" alt="The King's Arms thatched roof and exterior" class="gallery__main-image">
+        <button class="gallery__nav gallery__nav--next" id="gallery-next" aria-label="Next image">&#8594;</button>
+      </div>
+
+      <div class="gallery__thumbs" role="list" aria-label="Gallery thumbnails">
+        <button class="gallery__thumb is-active" role="listitem" data-src="images/Kings Arms - Selects-73.jpg" data-alt="The King's Arms thatched roof and exterior">
+          <img src="images/Kings Arms - Selects-73.jpg" alt="Thumbnail: thatched roof and exterior" loading="lazy">
+        </button>
+        <button class="gallery__thumb" role="listitem" data-src="images/D85_0397.jpg" data-alt="The King's Arms garden and sign">
+          <img src="images/D85_0397.jpg" alt="Thumbnail: garden and sign" loading="lazy">
+        </button>
+        <button class="gallery__thumb" role="listitem" data-src="images/TheKingsArms-5391-Extenal Edit-5899.jpg" data-alt="Pub exterior sign and umbrellas">
+          <img src="images/TheKingsArms-5391-Extenal Edit-5899.jpg" alt="Thumbnail: pub exterior sign" loading="lazy">
+        </button>
+        <button class="gallery__thumb" role="listitem" data-src="images/Kings Arms - Selects-3.jpg" data-alt="Pub sign close-up">
+          <img src="images/Kings Arms - Selects-3.jpg" alt="Thumbnail: pub sign" loading="lazy">
+        </button>
+        <button class="gallery__thumb" role="listitem" data-src="images/Kings Arms-1022-9380-Extenal Edit-6577.jpg" data-alt="Front elevation of The King's Arms">
+          <img src="images/Kings Arms-1022-9380-Extenal Edit-6577.jpg" alt="Thumbnail: front elevation" loading="lazy">
+        </button>
+        <button class="gallery__thumb" role="listitem" data-src="images/Kings Arms-1022-9356-Extenal Edit-6573.jpg" data-alt="Exterior view of The King's Arms">
+          <img src="images/Kings Arms-1022-9356-Extenal Edit-6573.jpg" alt="Thumbnail: exterior view" loading="lazy">
+        </button>
+        <button class="gallery__thumb" role="listitem" data-src="images/504988489_10162064925738717_6303940028685650812_n.jpg" data-alt="Community gathering outside the pub">
+          <img src="images/504988489_10162064925738717_6303940028685650812_n.jpg" alt="Thumbnail: community gathering" loading="lazy">
+        </button>
+        <button class="gallery__thumb" role="listitem" data-src="images/505079952_10162064925693717_5825809358225572581_n.jpg" data-alt="Community event at The King's Arms">
+          <img src="images/505079952_10162064925693717_5825809358225572581_n.jpg" alt="Thumbnail: community event" loading="lazy">
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SECTION 5: SUPPORT CTA BAND
+       ============================================ -->
+  <section id="cta" class="cta-band">
+    <div class="cta-band__container">
+      <span class="cta-band__eyebrow">Every bit of support helps.</span>
+      <p class="cta-band__text">
+        Names, stories, and shared memories all strengthen the case to save the King's Arms.
+      </p>
+      <a href="#support-form" class="btn btn--primary">Show Us Your Support!</a>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SECTION 6: SUPPORT FORM
+       ============================================ -->
+  <section id="support-form" class="support-form">
+    <div class="support-form__container">
+      <div class="support-form__card">
+        <h2 class="support-form__title">Share Your Support</h2>
+        <p class="support-form__caption">
+          Every bit of support helps. Names, stories, and shared memories all strengthen
+          the case to save the King's Arms.
+        </p>
+
+        <form id="supportForm" class="form" novalidate>
+          <div class="form__group">
+            <label for="name" class="form__label">Name <span class="form__required">*</span></label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="form__input"
+              required
+              placeholder="Your full name"
+            >
+            <span class="form__error" id="name-error">Please enter your name</span>
+          </div>
+
+          <div class="form__group">
+            <label for="email" class="form__label">Email <span class="form__required">*</span></label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form__input"
+              required
+              placeholder="your@email.com"
+            >
+            <span class="form__error" id="email-error">Please enter a valid email address</span>
+          </div>
+
+          <div class="form__group">
+            <label for="postcode" class="form__label">Postcode <span class="form__optional">(optional)</span></label>
+            <input
+              type="text"
+              id="postcode"
+              name="postcode"
+              class="form__input"
+              placeholder="PE8 5LB"
+            >
+          </div>
+
+          <div class="form__group">
+            <label for="message" class="form__label">Your Message or Memory <span class="form__required">*</span></label>
+            <textarea
+              id="message"
+              name="message"
+              class="form__textarea"
+              required
+              rows="5"
+              placeholder="Share your memories of the King's Arms or why saving it matters to you..."
+            ></textarea>
+            <span class="form__error" id="message-error">Please share your message or memory</span>
+          </div>
+
+          <div class="form__group">
+            <label for="photo" class="form__label">Upload a Photo <span class="form__optional">(optional)</span></label>
+            <input
+              type="file"
+              id="photo"
+              name="photo"
+              class="form__file"
+              accept="image/*"
+            >
+            <span class="form__hint">Share a photo of your memories at the King's Arms</span>
+          </div>
+
+          <div class="form__group form__group--checkbox">
+            <label class="form__checkbox-label">
+              <input
+                type="checkbox"
+                id="consent"
+                name="consent"
+                class="form__checkbox"
+              >
+              <span class="form__checkbox-text">
+                I'm happy for my message to be quoted (first name only).
+              </span>
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--full">Submit Support</button>
+
+          <p class="form__privacy">
+            We'll only use your details for this campaign.
+          </p>
+        </form>
+
+        <div id="form-success" class="form__success" hidden>
+          <h3>Thank You!</h3>
+          <p>Your support has been received. Together, we can save the King's Arms.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SECTION 7: PRESS / LINKS CARD
+       ============================================ -->
+  <section id="press" class="press-card">
+    <div class="press-card__container">
+      <a href="https://moneyweek.com/investments/house-prices/zoopla-could-a-good-local-pub-increase-your-house-price?fbclid=IwY2xjawPWOGlleHRuA2FlbQIxMQBzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEeW7Ret7taynG5pJKqO-g5pxOMoKFFAtq3rRG0gdeboulD--YMypfSrEUv7SA_aem_28JxyAH-_O2_t1cZVPYinA" class="press-card__link" target="_blank" rel="noopener noreferrer">
+        <article class="press-card__article">
+          <div class="press-card__image">
+            <img
+              src="images/QxR6fKfGKr6BhMiPRvBErF-1024-80.jpg.webp"
+              alt="The King's Arms"
+              loading="lazy"
+            >
+          </div>
+          <div class="press-card__content">
+            <h3 class="press-card__headline">Zoopla: could a good local pub increase your house price?</h3>
+            <span class="press-card__author">Zoopla Property News</span>
+            <span class="press-card__cta">View Article &rarr;</span>
+          </div>
+        </article>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SECTION 8: FOOTER
+       ============================================ -->
+  <footer class="footer">
+    <div class="footer__container">
+      <p class="footer__copyright">Copyright &copy; 2026 Save the King's Arms</p>
+      <nav class="footer__nav">
+        <a href="#hero" class="footer__link">Home</a>
+        <a href="#" class="footer__link">Privacy Policy</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
